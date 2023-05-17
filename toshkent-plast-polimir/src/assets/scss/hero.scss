@@ -1,0 +1,121 @@
+.hero {
+  &-wrapper {
+    position: relative;
+  }
+
+  &-h1 {
+    position: absolute;
+    width: 1027px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 110px;
+    line-height: 120px;
+    z-index: 1;
+    top: 42px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  &-btn {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 302px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 19px 16px;
+    gap: 10px;
+    width: 244px;
+    height: 56px;
+    border: none;
+    background: #ffffff;
+    border-radius: 60px;
+
+    &:hover {
+      background-color: rgb(57, 146, 224);
+      cursor: pointer;
+    }
+  }
+
+  &-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    width: 932px;
+    height: 72px;
+    margin-top: 200px;
+    margin-bottom: 112px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &-carousel {
+    position: absolute;
+    top: 40px;
+    right: -80px;
+  }
+
+  @media (max-width: 1090px) {
+    &-h1 {
+      font-size: 60px;
+      line-height: 70px;
+      width: 678px;
+      height: 140px;
+      top: 29px;
+    }
+    &-btn {
+      font-size: 14px;
+      line-height: 17px;
+      margin-top: 171px;
+      width: 196px;
+      height: 48px;
+    }
+
+    &-text {
+      max-width: 596px;
+      height: 40px;
+      margin-top: 106px;
+      margin-bottom: 56px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  @media (max-width: 765px) {
+    &-h1 {
+      width: 339px;
+      height: 92px;
+      top: 29px;
+      left: -50px;
+      font-size: 36px;
+      line-height: 46px;
+    }
+    &-btn {
+      width: 121px;
+      height: 38px;
+      font-size: 11px;
+      line-height: 13px;
+      margin-top: 251px;
+      margin-left: -50px;
+      padding: 13px 16px;
+    }
+
+    &-text {
+        width: 312px;
+        height: 60px;
+        font-size: 11px;
+        line-height: 20px;
+        margin-top: 30px;
+        margin-left: -50px;
+    }
+  }
+}

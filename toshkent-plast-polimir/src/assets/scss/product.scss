@@ -1,0 +1,280 @@
+.product {
+  &-container {
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  &-title {
+    width: 512px;
+    height: 36px;
+    font-family: "Inter";
+    margin-top: 100px;
+    margin-bottom: 39px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  &-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &-info {
+    height: 500px;
+    width: 630px;
+    background: #ffffff;
+    padding: 60px;
+  }
+
+  &-name {
+    height: 29px;
+    width: 302px;
+    margin-bottom: 20px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &-buttons {
+    &-button {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      margin: 4px;
+      line-height: 19px;
+      text-align: center;
+      text-transform: uppercase;
+      width: 150px;
+      height: 39px;
+      border: 1px solid rgba(64, 64, 64, 0.3);
+      border-radius: 60px;
+      color: rgba(64, 64, 64, 0.3);
+    }
+  }
+
+  &-item {
+    display: flex;
+  }
+
+  &-details {
+    margin-top: 20px;
+  }
+
+  &-size {
+    & > p {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: #000000;
+      margin-bottom: 14px;
+    }
+    &-options {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      text-align: center;
+      text-transform: uppercase;
+      gap: 4px;
+      margin-bottom: 20px;
+    }
+
+    &-option1 {
+      padding: 10px 16px;
+      width: 99px;
+      height: 36px;
+      background: #f4f3f3;
+      color: #004cca;
+    }
+
+    &-option2 {
+      padding: 10px 16px;
+      width: 100px;
+      height: 36px;
+      border: 1px solid rgba(64, 64, 64, 0.1);
+    }
+  }
+
+  &-quantity {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    &-option1 {
+      width: 24px;
+      height: 24px;
+      background: #f7de26;
+      border-radius: 50%;
+    }
+
+    &-option2 {
+      width: 24px;
+      height: 24px;
+      background: #43514f;
+      border-radius: 50%;
+    }
+
+    &-option3 {
+      width: 24px;
+      height: 24px;
+      background: #863228;
+      border-radius: 50%;
+    }
+  }
+
+  &-price-label {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 16px;
+    margin-bottom: 11px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  &-price {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+
+  &-image {
+    &:hover {
+      scale: (1.1);
+    }
+  }
+
+  @media (max-width: 1090px) {
+    &-title {
+      margin-top: 80px;
+    }
+  }
+
+  @media (max-width: 765px) {
+    &-title {
+      margin-top: 60px;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+
+    &-info {
+      padding: 30px;
+      position: relative;
+      max-width: 375;
+      height: 600px;
+      overflow: hidden;
+    }
+
+    &-name {
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 10px;
+      margin-left: -40px;
+    }
+
+    &-buttons {
+      max-width: 302px;
+      button {
+        font-size: 12px;
+        line-height: 15px;
+        padding: 10px 16px;
+        width: 88px;
+        height: 34px;
+      }
+    }
+
+    &-item {
+      flex-direction: column;
+    }
+
+    &-details {
+      margin-top: 10px;
+    }
+
+    &-size {
+      & > p {
+        font-size: 10px;
+        line-height: 12px;
+      }
+      &-options {
+        font-size: 11px;
+        line-height: 13px;
+      }
+
+      &-option1 {
+        padding: 8px 16px;
+        width: 90px;
+        height: 30px;
+      }
+
+      &-option2 {
+        padding: 8px 16px;
+        width: 90px;
+        height: 30px;
+      }
+    }
+
+    &-quantity {
+        position: absolute;
+        bottom: 10px;
+        left: 30px;
+      &-option1 {
+        width: 24px;
+        height: 24px;
+        background: #f7de26;
+        border-radius: 50%;
+      }
+
+      &-option2 {
+        width: 24px;
+        height: 24px;
+        background: #43514f;
+        border-radius: 50%;
+      }
+
+      &-option3 {
+        width: 24px;
+        height: 24px;
+        background: #863228;
+        border-radius: 50%;
+      }
+    }
+
+    &-price-label {
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    &-price {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &-image {
+      height: 177px;
+      width: 272px;
+      left: 50px;
+    }
+  }
+}
