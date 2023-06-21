@@ -1,0 +1,59 @@
+.slideshow-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 370px;
+}
+@media (max-width: 768px) {
+  .slideshow-container {
+    flex-direction: column;
+    gap: 50%;
+  }
+  .slideshow-container .card1 {
+    margin-top: -290px;
+  }
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 710px;
+  max-height: 480px;
+}
+@media (max-width: 768px) {
+  .card {
+    height: auto;
+  }
+}
+.card .mySlides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.card .mySlides.active {
+  display: block;
+  opacity: 1;
+}
+.card .mySlides img {
+  width: 100%;
+  max-height: 370px;
+  height: 100%;
+}
+
+.container div .slide-btn {
+  width: 60px;
+  height: 60px;
+  color: white;
+  border: none;
+  background: #004cca;
+}
+@media (max-width: 1090px) {
+  .container div .slide-btn {
+    width: 30px;
+    height: 30px;
+  }
+}/*# sourceMappingURL=sliding.css.map */

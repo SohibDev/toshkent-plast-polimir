@@ -1,6 +1,7 @@
 .hero {
   &-wrapper {
     position: relative;
+
   }
 
   &-h1 {
@@ -58,7 +59,7 @@
   &-carousel {
     position: absolute;
     top: 40px;
-    right: -80px;
+    right: 0px;
   }
 
   @media (max-width: 1090px) {
@@ -95,7 +96,7 @@
       width: 339px;
       height: 92px;
       top: 29px;
-      left: -50px;
+      // left: -50px;
       font-size: 36px;
       line-height: 46px;
     }
@@ -105,7 +106,7 @@
       font-size: 11px;
       line-height: 13px;
       margin-top: 251px;
-      margin-left: -50px;
+      // margin-left: -50px;
       padding: 13px 16px;
     }
 
@@ -115,7 +116,7 @@
         font-size: 11px;
         line-height: 20px;
         margin-top: 30px;
-        margin-left: -50px;
+        // margin-left: -50px;
     }
   }
 }

@@ -22,23 +22,23 @@ const About = () => {
           <button className="about-btn">More know</button>
         </div>
       </div>
-      <div className="about-bottomWrapper">
-        <div className="about-bottomWrapper-card">
+      <div className="about-bottomWrapper row">
+        <div className="about-bottomWrapper-card col-12 col-sm-6 col-lg-3">
           <img src={Clock} alt="clock" />
-          <h2>70 000+</h2>
+          <h2 className="">70 000+</h2>
           <p>How many hours can be used</p>
         </div>
-        <div className="about-bottomWrapper-card">
+        <div className="about-bottomWrapper-card col-12 col-sm-6 col-lg-3">
           <img src={Building} alt="Building" />
           <h2>7000 m2</h2>
           <p>total production area</p>
         </div>
-        <div className="about-bottomWrapper-card">
+        <div className="about-bottomWrapper-card col-12 col-sm-6 col-lg-3">
           <img src={Community} alt="Community" />
           <h2>300 ^</h2>
           <p>total worker</p>
         </div>
-        <div className="about-bottomWrapper-card">
+        <div className="about-bottomWrapper-card col-12 col-sm-6 col-lg-3">
           <img src={Garrage} alt="Garrage" />
           <h2>10 000 m2</h2>
           <p>total warehouse capacity</p>
